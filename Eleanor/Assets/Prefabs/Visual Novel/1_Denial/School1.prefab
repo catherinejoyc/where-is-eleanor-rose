@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2036729567727329788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 916476546360367200, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Name
+      value: School1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[0]
+      value: (What the heck?) :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[1]
+      value: ELEANOR?! :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[2]
+      value: "(What is this\u2026) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[3]
+      value: (why am I in school?) :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[4]
+      value: ELEANOR WHERE ARE YOU? :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[5]
+      value: "(This must be a dream. Or I\u2019m imagining things.) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[6]
+      value: Daisy?! Daisy are you there? :Eleanor Rose
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[7]
+      value: "(That\u2019s Eleanor!) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[8]
+      value: "Eleanor?! Where are you? I can\u2019t see you! :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[9]
+      value: "(Nothing\u2026) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[10]
+      value: (but I definitely heard her voice.) :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[11]
+      value: "Stay wherever you are, I\u2019m coming for you, I promise! :Georgia
+        Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 175d8abd3b03263488f2b924e86e1590,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: pureVisualNovelScene
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 916476546360367205, guid: 71ab53af433283f4b94a2bf6aa5ac1e2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 71ab53af433283f4b94a2bf6aa5ac1e2, type: 3}

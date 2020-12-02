@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E2027C2-D66F-4248-9669-8127B743BB24}" SchemaVersion="94">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{5E2027C2-D66F-4248-9669-8127B743BB24}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="ClearSight_Trigger" ID="{3A3B1A56-96CC-4002-95D5-CF3D3C9507D3}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

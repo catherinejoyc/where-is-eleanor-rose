@@ -1,0 +1,58 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	659192053	Denial_SG			\Default Work Unit\Denial_SG	
+	1094663664	Bargaining_SG			\Default Work Unit\Bargaining_SG	
+	2515940707	Anger_SG			\Default Work Unit\Anger_SG	
+	3747756326	Depression_SG			\Default Work Unit\Depression_SG	
+
+Switch	ID	Name	Switch Group			Notes
+	3810638041	Denial1	Denial_SG			
+	3810638042	Denial2	Denial_SG			
+	3810638043	Denial3	Denial_SG			
+	2727595076	Bargaining1	Bargaining_SG			
+	2727595078	Bargaining3	Bargaining_SG			
+	2727595079	Bargaining2	Bargaining_SG			
+	3629523368	Anger2	Anger_SG			
+	3629523369	Anger3	Anger_SG			
+	3629523371	Anger1	Anger_SG			
+	3362116180	Depression3	Depression_SG			
+	3362116181	Depression2	Depression_SG			
+	3362116182	Depression1	Depression_SG			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	0	None	Music			
+	127485845	AngerState	Music			
+	734953026	BargainingState	Music			
+	860641656	DepressionState	Music			
+	885775863	BT_St	Music			
+	2602919295	DenialState	Music			
+	3085453093	BT_v2State	Music			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Reflect Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Reflect Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Reflect Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Reflect Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Reflect Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	3127962312	Music Bus			\Default Work Unit\Music Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+	4230635974	Default_Motion_Device	Wwise Motion			
+

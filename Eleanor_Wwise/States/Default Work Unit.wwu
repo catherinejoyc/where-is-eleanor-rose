@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{576B639C-68F4-4E88-9FD3-1656028D350F}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{576B639C-68F4-4E88-9FD3-1656028D350F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music" ID="{FF48EC57-5018-421B-BE91-9ADDC2A32D57}">
+					<ChildrenList>
+						<State Name="None" ID="{6295F81C-5F17-459D-BA7D-E2F4C2E6B052}"/>
+						<State Name="BT_St" ID="{1156D2CA-34AD-478F-8C10-0F35BA73CE94}"/>
+						<State Name="DenialState" ID="{C48DC1FF-8CF5-46C9-90FE-B52B78CA4B80}"/>
+						<State Name="DepressionState" ID="{8FD2F301-5835-42A8-9C63-E6AD20EC48B3}"/>
+						<State Name="AngerState" ID="{90A88967-1F02-4768-84BB-8D52A0E35162}"/>
+						<State Name="BargainingState" ID="{44C752D2-75E3-4E09-9354-65FF3DA263D0}"/>
+						<State Name="BT_v2State" ID="{70F7401E-28D7-40D2-A31D-E62DEFA95F17}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

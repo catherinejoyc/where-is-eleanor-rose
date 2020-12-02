@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Foley" ID="{D2298F17-1264-4E70-AA67-6C842A21F5D7}" ShortID="88091581">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Player_Footsteps" ID="{D2C01749-24FC-445E-8774-A6A01963B056}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="12"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{E15425EA-B15D-4064-B863-920CF4D8B19C}" ShortID="322347398">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps" ID="{063965E0-2AC3-4684-8AAC-996C24BC4E81}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Minion_Footsteps" ID="{0571C73D-E97B-414E-9A6B-FE5588072899}">
+							<ChildrenList>
+								<Action Name="" ID="{EE9F882E-D7AD-42BC-9D11-7A9A81D3C1BA}" ShortID="68732383">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Minion_Footsteps" ID="{C61F10B6-2257-4D50-AFF2-C5C0C008FC98}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Minion_Footsteps" ID="{F6B2A5E9-42E6-49AD-A97D-FF36D7A2E0B3}">
+							<ChildrenList>
+								<Action Name="" ID="{69FA9027-96E0-4519-B6DC-346921F729FC}" ShortID="532788983">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Minion_Footsteps" ID="{C61F10B6-2257-4D50-AFF2-C5C0C008FC98}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Footsteps" ID="{596D7E71-458D-457B-9057-33571EA4C0E9}">
+							<ChildrenList>
+								<Action Name="" ID="{2E81356F-C010-4947-8C11-D9DE2A60F757}" ShortID="926120484">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps" ID="{063965E0-2AC3-4684-8AAC-996C24BC4E81}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{77B642F8-B131-431E-AA23-B98B6E3297AC}" ShortID="190686801">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{71B38482-065D-4516-B95E-53691AA681DA}">
+							<ChildrenList>
+								<Action Name="" ID="{F3F33139-F5A1-43F7-94C2-BC0FDC5865CA}" ShortID="642984858">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{6F26E28A-8DC4-4CDE-931F-7A1543BD3830}" WorkUnitID="{25BC5BC4-3CC3-43E6-B7CA-314881C8E3DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Music" ID="{7A60E576-BCB3-452F-8F9D-06CD257F75DB}">
+							<ChildrenList>
+								<Action Name="" ID="{046EF364-C1AE-4B1A-991C-B185E30DA566}" ShortID="11545429">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D2814379-8EE6-45C3-9775-F7D24FB3E3D4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{6F26E28A-8DC4-4CDE-931F-7A1543BD3830}" WorkUnitID="{25BC5BC4-3CC3-43E6-B7CA-314881C8E3DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Music_NoFade" ID="{ED074FB3-35A3-41A1-B797-30BA82D60095}">
+							<ChildrenList>
+								<Action Name="" ID="{AE9059B5-52E6-4745-9B49-ED1341680FC1}" ShortID="109509478">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{6F26E28A-8DC4-4CDE-931F-7A1543BD3830}" WorkUnitID="{25BC5BC4-3CC3-43E6-B7CA-314881C8E3DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CS_Trigger" ID="{EE4F867D-9736-4A13-9688-9E3896EA74B2}">
+							<ChildrenList>
+								<Action Name="" ID="{649D4D87-7463-4F98-8C05-B1E66242CC80}" ShortID="461909975">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ClearSight_Trigger" ID="{3A3B1A56-96CC-4002-95D5-CF3D3C9507D3}" WorkUnitID="{5E2027C2-D66F-4248-9669-8127B743BB24}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BTGlitch" ID="{B105CA3D-F0B2-4104-AD03-7C883387428F}">
+							<ChildrenList>
+								<Action Name="" ID="{3925CEE4-CC7F-447C-99DC-39E39341A45C}" ShortID="227640675">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BT_Glitch" ID="{065157AA-2BE8-437E-B7C1-B692A9EAC048}" WorkUnitID="{25BC5BC4-3CC3-43E6-B7CA-314881C8E3DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Collectibles" ID="{CF5B1D47-BA00-4300-814D-349257A0C4F9}" ShortID="879714361">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Nazar" ID="{7105AA61-4B60-4292-A3F4-6FCA60CE44EE}">
+							<ChildrenList>
+								<Action Name="" ID="{CCE9412C-B780-4410-90EE-3BF2E243C223}" ShortID="129452867">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Nazar" ID="{4ACCBBF5-C36D-48E7-ACB0-612E031BBECA}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Daisy" ID="{5D9B55A6-F3B2-48D2-A603-371E9FEF04E7}">
+							<ChildrenList>
+								<Action Name="" ID="{BA8F4930-6F48-4802-A534-BFF0B84B4F1D}" ShortID="70174559">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Daisy" ID="{D3145683-939F-4281-B2A8-76CD4D07501A}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFx" ID="{928DD3E0-F8DA-4D65-8D47-81E6541AB2B0}" ShortID="406104349">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_ClearSight" ID="{8D2D077B-129F-45FB-8D39-5D62E1D8C524}">
+							<ChildrenList>
+								<Action Name="" ID="{B7D421FF-E84C-4052-A7EA-9B00794AC2A9}" ShortID="269449084">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Activate_ClearSight" ID="{A6237F50-301F-420F-A092-976100E5D23E}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_ClearSight" ID="{EC505679-C15C-4F12-80BE-FA4D08FAD0AD}">
+							<ChildrenList>
+								<Action Name="" ID="{4062FB86-2262-4E4D-B55B-7FDF7FA3C917}" ShortID="510097102">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Activate_ClearSight" ID="{A6237F50-301F-420F-A092-976100E5D23E}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CSGlitch" ID="{0E61065C-235B-4FAE-91E7-61C391574236}">
+							<ChildrenList>
+								<Action Name="" ID="{6DA9E5ED-7B7A-4BF2-B6C7-90ACF9EECE29}" ShortID="461196772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CSGlitch" ID="{87826C0E-DE84-407D-9038-BE4EB02DC1AD}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_CSGlitch" ID="{7FE22133-C4BC-47B0-9CA7-651F881458ED}">
+							<ChildrenList>
+								<Action Name="" ID="{172BE11E-A890-4AF2-9CA3-AE7EFA102291}" ShortID="328565680">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CSGlitch" ID="{87826C0E-DE84-407D-9038-BE4EB02DC1AD}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_GlitchBT" ID="{EE4F7362-9D65-4544-AA1D-B6ADB20B6052}">
+							<ChildrenList>
+								<Action Name="" ID="{AB95D677-007A-46A1-B82D-B91F4816B59E}" ShortID="911666637">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BT_Glitch" ID="{065157AA-2BE8-437E-B7C1-B692A9EAC048}" WorkUnitID="{25BC5BC4-3CC3-43E6-B7CA-314881C8E3DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="VisualNovel" ID="{B196726F-67F2-49F4-B28C-9A942A6C9195}" ShortID="584697193">
+					<ChildrenList>
+						<Event Name="Play_TextSound" ID="{EE8F5E3A-7AC9-4FA9-8223-9EBC03DEA3C3}">
+							<ChildrenList>
+								<Action Name="" ID="{8C49D289-91EF-4A1E-A403-22497367F0F0}" ShortID="74257090">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TextSound" ID="{0379F7F8-60BC-4D33-A9FA-ACC20C567F87}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Atmo" ID="{E29FFED2-48CE-42AB-9EA7-EB8F2C99FA6A}" ShortID="516343643">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_AtmoGraveyard" ID="{91F904F9-2E10-4E4D-BD9D-7B6B3A60B687}">
+							<ChildrenList>
+								<Action Name="" ID="{9191F9F5-975D-406B-BE71-49A05273BD89}" ShortID="777976437">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambiece_loop_mixdown" ID="{7ADB57CE-EB86-45C0-A845-54D6900938CC}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AtmoGraveyard" ID="{810E3DB0-F296-485F-8ADE-C7A907CC151B}">
+							<ChildrenList>
+								<Action Name="" ID="{25448527-1285-4E37-A7FE-D41D9927F3A2}" ShortID="175283538">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambiece_loop_mixdown" ID="{7ADB57CE-EB86-45C0-A845-54D6900938CC}" WorkUnitID="{4049F628-B766-4DCB-80EC-DF4E24E59ED1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

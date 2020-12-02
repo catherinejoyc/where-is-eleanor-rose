@@ -1,0 +1,725 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &507398980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507398981}
+  - component: {fileID: 507398982}
+  m_Layer: 0
+  m_Name: path2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &507398981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507398980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1078159066}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507398982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507398980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - "(I have to ask her now, or I\u2019ll just wonder forever.) :Georgia Daisy"
+  - Did you really mean what you said before? Is there really no chance of finding
+    Eleanor? :Georgia Daisy
+  - "I\u2019m afraid I don\u2019t have all the answers you\u2019re looking for, Georgia,
+    I don\u2019t think anyone has. :A teacher???"
+  - "Maybe you can find her, but I don\u2019t think that things will ever be like
+    they used to be. :A teacher???"
+  - But why? Why do you think that? :Georgia Daisy
+  - "Oh dear, another question I can\u2019t answer. You will find out yourself, I
+    promise. :A teacher???"
+  - "I don\u2019t know. If I can\u2019t find her this will all just have been a waste
+    of time. :Georgia Daisy"
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 6ab0b1c5d6a941a41ac19fe465f74851, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: a3494d1b0a8b75949896f5591fbed866, type: 3}
+  - {fileID: 21300000, guid: a3494d1b0a8b75949896f5591fbed866, type: 3}
+  nextDialog: {fileID: 0}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 1182093614}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+  lastPartOfTheDialog: 0
+  parentObject: {fileID: 0}
+--- !u!1 &1078159065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078159066}
+  - component: {fileID: 1078159067}
+  m_Layer: 0
+  m_Name: Choice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1078159066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078159065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1800260907}
+  - {fileID: 507398981}
+  m_Father: {fileID: 7869902583710958163}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078159067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078159065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4259cbfee62d26847b1d9b26c96bb385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path1: Is there anything I could have done?
+  path2: Is there really no chance of finding Eleanor?
+  path1Script: {fileID: 1800260906}
+  path2Script: {fileID: 507398980}
+--- !u!1 &1182093614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182093615}
+  - component: {fileID: 1182093616}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1182093615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182093614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7869902583710958163}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1182093616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182093614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - "Many think that it\u2019s wrong to dwell on the past, Georgia, but to ask yourself
+    \u201CWhat if?\u201D is simply preparing yourself for a reality you\u2019re not
+    quite ready to accept. :A teacher???"
+  - I think I am ready for my memory. :Georgia Daisy
+  - Then this hyacinth belongs to you. :A teacher???
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 6903a1252c5e7ae48bc6bded8ba2fec6, type: 3}
+  - {fileID: 21300000, guid: 6903a1252c5e7ae48bc6bded8ba2fec6, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  nextDialog: {fileID: 494770180353667000}
+  flowerState: 2
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 0}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+  lastPartOfTheDialog: 0
+  parentObject: {fileID: 0}
+--- !u!1 &1800260906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800260907}
+  - component: {fileID: 1800260908}
+  m_Layer: 0
+  m_Name: path1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1800260907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800260906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1078159066}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800260908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800260906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - "(I have to ask her now, or I\u2019ll just wonder forever.) :Georgia Daisy"
+  - "Before you give me a flower, can you tell me what you meant before? About \u201Chaving
+    to look where no man can go\u201D? :Georgia Daisy"
+  - "About being \u201Ctoo late\u201D? :Georgia Daisy"
+  - Is there something I could have done? :Georgia Daisy
+  - Some things you will have to figure out yourself, Georgia. And you will, I promise.
+    :A teacher???
+  - "But I\u2019m not too late, am I? There isn\u2019t something I could have done
+    to save her? :Georgia Daisy"
+  - "I can\u2019t answer this for you. Either way, it doesn\u2019t matter. :A teacher???"
+  - So am I wasting my time here? Figuring out what happened? :Georgia Daisy
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87, type: 3}
+  - {fileID: 21300000, guid: 6903a1252c5e7ae48bc6bded8ba2fec6, type: 3}
+  - {fileID: 21300000, guid: 6903a1252c5e7ae48bc6bded8ba2fec6, type: 3}
+  - {fileID: 21300000, guid: 6ab0b1c5d6a941a41ac19fe465f74851, type: 3}
+  - {fileID: 21300000, guid: 6ab0b1c5d6a941a41ac19fe465f74851, type: 3}
+  nextDialog: {fileID: 0}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 1182093614}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+  lastPartOfTheDialog: 0
+  parentObject: {fileID: 0}
+--- !u!1 &494770180353667000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6073905675408077622}
+  - component: {fileID: 1727722978585484430}
+  - component: {fileID: 1097935076}
+  m_Layer: 0
+  m_Name: Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6073905675408077622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494770180353667000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7869902583710958163}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727722978585484430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494770180353667000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f62130354a97a24f81a83f51aa6bb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextDialog: {fileID: 3580736556797518550}
+  videoClipLength: 16
+  videoPlayerPanel: {fileID: 7068617424800658121}
+  graveyardScene: 0
+--- !u!114 &1097935076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494770180353667000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76eb4253b50379d4aa7b92134c52330b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoLength: 17
+--- !u!1 &3580736556797518550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5014472492719371372}
+  - component: {fileID: 4170172778299796897}
+  m_Layer: 0
+  m_Name: End2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5014472492719371372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580736556797518550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7869902583710958163}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4170172778299796897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580736556797518550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - (I felt invisible my entire life. But that day it felt like veryone was looking
+    at me. And I can still feel their stares on my skin now.) :Georgia Daisy
+  - (I remember how in all of their stares they hid the same lingering question-)
+    :Georgia Daisy
+  - "(\u201CWhy did this happen?\u201D) :Georgia Daisy"
+  - "I\u2019m scared. I don\u2019t know if I can continue. :Georgia Daisy"
+  - " You\u2019ve made it this far, Georgia. We all believe in you. :A teacher???"
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e, type: 3}
+  - {fileID: 21300000, guid: 6903a1252c5e7ae48bc6bded8ba2fec6, type: 3}
+  nextDialog: {fileID: 0}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 0}
+  pureVisualNovelScene: 1
+  lockedArea: {fileID: 0}
+  lastPartOfTheDialog: 1
+  parentObject: {fileID: 0}
+--- !u!1001 &1125659098746090753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7869902583710958163}
+    m_Modifications:
+    - target: {fileID: 7892526343573872102, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Name
+      value: VideoPlayer_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526344034273224, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_TargetAudioSources.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioMutes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 71fb4c9481449e64cb8575ccdf4f4b36,
+        type: 3}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_TargetAudioSources.Array.data[0]
+      value: 
+      objectReference: {fileID: 1715269310874235039}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_ControlledAudioTrackCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a25463854eb22044f90d65b54b4ba6df, type: 3}
+--- !u!1 &7068617424800658121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7892526344034273224, guid: a25463854eb22044f90d65b54b4ba6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1125659098746090753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1715269310874235039 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1752736596013860254, guid: a25463854eb22044f90d65b54b4ba6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1125659098746090753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7025747515279153713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 916476546360367200, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Name
+      value: Bargaining2
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367200, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03000021
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[0]
+      value: (Not a student, huh.) :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[1]
+      value: See! I could help you after all. :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[2]
+      value: Seems like it. :A teacher???
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b3d2345cccd6194bb3068f1ccce7c5e,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2daf48ebca6fdc044a57b8ec34081d87,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: embodimentAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: choices
+      value: 
+      objectReference: {fileID: 1078159065}
+    - target: {fileID: 916476546360367205, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367205, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367205, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 916476546360367205, guid: 71ab53af433283f4b94a2bf6aa5ac1e2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 71ab53af433283f4b94a2bf6aa5ac1e2, type: 3}
+--- !u!4 &7869902583710958163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025747515279153713}
+  m_PrefabAsset: {fileID: 0}

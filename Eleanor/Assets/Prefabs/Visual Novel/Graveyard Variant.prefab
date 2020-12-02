@@ -1,0 +1,741 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &229359854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229359855}
+  - component: {fileID: 229359856}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &229359855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229359854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2341274809654208195}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229359856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229359854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - "I\u2019m just not ready to let her go. :Georgia Daisy"
+  - "You don\u2019t have to. You just have to let go of the pain someday. :Amber Summers"
+  - "And you\u2019re not alone. Here, you can have my flowers. :Amber Summers"
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: c8aa363eec6fab94da74e8380bfcb298, type: 3}
+  - {fileID: 21300000, guid: 1832bcf0ae282c1499fca2cefaae9370, type: 3}
+  - {fileID: 21300000, guid: 227b0f705babe7a438ce879ecb80471b, type: 3}
+  nextDialog: {fileID: 2132053563}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 0}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+--- !u!1 &1160191292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160191293}
+  - component: {fileID: 1160191294}
+  m_Layer: 0
+  m_Name: Choice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1160191293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160191292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1324344448}
+  - {fileID: 1882548569}
+  m_Father: {fileID: 2341274809654208195}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160191294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160191292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4259cbfee62d26847b1d9b26c96bb385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path1: Do you ever stop missing them?
+  path2: What do you mean?
+  path1Script: {fileID: 1324344447}
+  path2Script: {fileID: 1882548568}
+--- !u!1 &1324344447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324344448}
+  - component: {fileID: 1324344449}
+  m_Layer: 0
+  m_Name: Path1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1324344448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324344447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160191293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324344449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324344447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - So, do you ever stop? Missing them? :Georgia Daisy
+  - (What dumb question.) :Georgia Daisy
+  - "You don\u2019t. Not really. :Amber Summers"
+  - "But missing turns into remembering at some point and somehow \u2013 :Amber Summers"
+  - that hurts less. :Amber Summers
+  - Oh. :Georgia Daisy
+  - Not gonna lie- This is going to be hard for such a long time and often it will
+    feel like you have taken three steps back. :Amber Summers
+  - But every step back is still part of the path. :Amber Summers
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316, type: 3}
+  - {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316, type: 3}
+  - {fileID: 21300000, guid: c8aa363eec6fab94da74e8380bfcb298, type: 3}
+  - {fileID: 21300000, guid: 227b0f705babe7a438ce879ecb80471b, type: 3}
+  - {fileID: 21300000, guid: 1832bcf0ae282c1499fca2cefaae9370, type: 3}
+  - {fileID: 21300000, guid: 1832bcf0ae282c1499fca2cefaae9370, type: 3}
+  - {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316, type: 3}
+  - {fileID: 21300000, guid: c8aa363eec6fab94da74e8380bfcb298, type: 3}
+  nextDialog: {fileID: 0}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 229359854}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+--- !u!1 &1882548568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1882548569}
+  - component: {fileID: 1882548570}
+  m_Layer: 0
+  m_Name: Path2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1882548569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882548568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160191293}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1882548570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882548568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - What do you mean? :Georgia Daisy
+  - I lost someone before. It felt like I was going to lose my mind. Maybe I did,
+    at least for a while. :Amber Summers
+  - And were you ever able to move on? :Georgia Daisy
+  - (What a dumb question.) :Georgia Daisy
+  - "It\u2019s not about moving on, you know - :Amber Summers"
+  - At least I never did. :Amber Summers
+  - "Sure, life goes on but it\u2019s completely different from what you were used
+    to. But it does get easier. :Amber Summers"
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316, type: 3}
+  - {fileID: 21300000, guid: 136e4f83fbe34114db7cb2773fcf944e, type: 3}
+  - {fileID: 21300000, guid: 136e4f83fbe34114db7cb2773fcf944e, type: 3}
+  - {fileID: 21300000, guid: 136e4f83fbe34114db7cb2773fcf944e, type: 3}
+  - {fileID: 21300000, guid: 1832bcf0ae282c1499fca2cefaae9370, type: 3}
+  - {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316, type: 3}
+  - {fileID: 21300000, guid: c8aa363eec6fab94da74e8380bfcb298, type: 3}
+  nextDialog: {fileID: 0}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 229359854}
+  pureVisualNovelScene: 0
+  lockedArea: {fileID: 0}
+--- !u!1 &2132053563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132053564}
+  - component: {fileID: 2132053565}
+  m_Layer: 0
+  m_Name: Cutsceneplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2132053564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132053563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2341274809654208195}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132053565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132053563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f62130354a97a24f81a83f51aa6bb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextDialog: {fileID: 0}
+  videoClipLength: 55
+  videoPlayerPanel: {fileID: 1859320674697358602}
+  graveyardScene: 1
+--- !u!1001 &3227422425998900897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 916476546360367200, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_Name
+      value: Graveyard
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.893652
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7628136
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.398388
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[0]
+      value: "(I\u2019ve been so scared of coming here.) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[1]
+      value: (Like being here would somehow make her disappear once and for all.)
+        :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[2]
+      value: Oh, Eleanor. :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[3]
+      value: "Somehow, I still feel like I\u2019m waiting. :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[4]
+      value: Waiting for you to return. :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[5]
+      value: So much is going on and the only person I want to talk about it with
+        is you, is that dumb? :Georgia Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[6]
+      value: '... :Amber Summers'
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[7]
+      value: "(I think I\u2019ve seen her once before. Don\u2019t think we ever talked
+        though.) :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[8]
+      value: "Oh- sorry, I didn\u2019t want to interrupt. :Amber Summers"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[9]
+      value: "It\u2019s fine, go ahead. :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[10]
+      value: "I didn\u2019t know her, but we had history together a couple of times.
+        She seemed nice, even though I was a little intimidated by her. \u2013 :Amber
+        Summers"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[11]
+      value: "Oh shoot, I hope that wasn\u2019t rude! :Amber Summers"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[12]
+      value: "Don\u2019t worry, I get that. She even terrified me sometimes. That\u2019s
+        kinda her thing. I mean, was her thing. :Georgia Daisy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: dialog.Array.data[13]
+      value: "I know what it\u2019s like, you know, having to go through this. :Amber
+        Summers"
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b0ed84a39466f548827928871658049,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b0ed84a39466f548827928871658049,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b0ed84a39466f548827928871658049,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b0ed84a39466f548827928871658049,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: sprites.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b277d89f2540664ebe2024450884316,
+        type: 3}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: choices
+      value: 
+      objectReference: {fileID: 1160191292}
+    - target: {fileID: 916476546360367203, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+        type: 3}
+      propertyPath: pureVisualNovelScene
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71ab53af433283f4b94a2bf6aa5ac1e2, type: 3}
+--- !u!4 &2341274809654208195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 916476546360367202, guid: 71ab53af433283f4b94a2bf6aa5ac1e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3227422425998900897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8379581154822598892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2341274809654208195}
+    m_Modifications:
+    - target: {fileID: 7892526343573872102, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Name
+      value: VideoPlayer_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872102, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.398388
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.893652
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.7628136
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343573872103, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526344034273078, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526344034273078, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526344034273078, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526344034273078, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_TargetAudioSources.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioMutes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 66e2263298c39de498d025bc474339d6,
+        type: 3}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_TargetAudioSources.Array.data[0]
+      value: 
+      objectReference: {fileID: 7789177917719311730}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892526343099075988, guid: a25463854eb22044f90d65b54b4ba6df,
+        type: 3}
+      propertyPath: m_ControlledAudioTrackCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a25463854eb22044f90d65b54b4ba6df, type: 3}
+--- !u!1 &1859320674697358602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7892526343573872102, guid: a25463854eb22044f90d65b54b4ba6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 8379581154822598892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7789177917719311730 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1752736596013860254, guid: a25463854eb22044f90d65b54b4ba6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 8379581154822598892}
+  m_PrefabAsset: {fileID: 0}

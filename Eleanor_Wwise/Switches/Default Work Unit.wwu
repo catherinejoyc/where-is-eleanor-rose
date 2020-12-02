@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E2FD9653-8A97-4ACF-9667-36D919221878}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{E2FD9653-8A97-4ACF-9667-36D919221878}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Denial_SG" ID="{CD9401ED-EC66-46E9-A669-3E625E441C26}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Denial1" ID="{18EB5194-72F1-47E2-9067-997B1B1EF49A}"/>
+						<Switch Name="Denial2" ID="{8376FD02-BDE1-411E-AAD8-C2DA2136B689}"/>
+						<Switch Name="Denial3" ID="{8A467B06-DFE0-4EA0-9FCC-0BDCDC82574F}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerLocation_RTPC" ID="{DCDD00EC-1904-4B7D-BBDC-FBE61A112DCF}"/>
+						<Curve Name="" ID="{521D9A1F-4969-4DBA-B18A-A143C84F319D}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Depression_SG" ID="{9E64F035-5B34-4F4D-A774-6A9F88F84B02}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Depression1" ID="{B62CFCBB-1DA2-434F-BD3F-01A90399B356}"/>
+						<Switch Name="Depression2" ID="{CA5DA111-4201-46B9-9288-8F20B3037A1C}"/>
+						<Switch Name="Depression3" ID="{F7D04614-2EF9-4904-8564-F76D1EE06160}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerLocation_RTPC" ID="{DCDD00EC-1904-4B7D-BBDC-FBE61A112DCF}"/>
+						<Curve Name="" ID="{54908F23-1525-4BBF-8B8F-A8F032D89C9F}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Anger_SG" ID="{10BC3E16-01E8-4DBF-9B4F-491C4B12FFE0}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Anger1" ID="{38F756CB-6214-4600-A4DD-CDAD24789C3B}"/>
+						<Switch Name="Anger2" ID="{DFBF5D38-59B7-4F43-8411-6433BB4A5888}"/>
+						<Switch Name="Anger3" ID="{679E172C-F21E-4D8B-8016-D30D2F4F2941}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerLocation_RTPC" ID="{DCDD00EC-1904-4B7D-BBDC-FBE61A112DCF}"/>
+						<Curve Name="" ID="{423820D0-0155-492F-936E-7A5EFAE8FD05}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>99.999</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Bargaining_SG" ID="{005FC3AA-2824-4F01-BF22-A2164C37B3AB}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Bargaining1" ID="{5F4617A7-AC73-4C2C-9D95-9F551438AE45}"/>
+						<Switch Name="Bargaining2" ID="{007BE4E8-3D82-4153-BBC9-6280B573DD7A}"/>
+						<Switch Name="Bargaining3" ID="{6EBF5E3D-0A50-4DAB-8E69-D463112B86CE}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PlayerLocation_RTPC" ID="{DCDD00EC-1904-4B7D-BBDC-FBE61A112DCF}"/>
+						<Curve Name="" ID="{A01369DA-BFCF-43A8-A05D-58489D0CDFCA}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

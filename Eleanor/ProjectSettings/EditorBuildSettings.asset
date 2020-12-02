@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a8af635095e59094f9cee9a00742d03e
+  - enabled: 1
+    path: Assets/Scenes/Level0.unity
+    guid: 4881ba4394f2a8d44ac9af717636a2f5
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 68caf2224ae43bd4a918474ce88e31cf
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 81f08e08de1317b4e869fbf25cceffb4
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: bad94d877899f5f4ab0d57cf9923963d
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: f4ed1175b438cf74f91253fe8d7cc081
+  - enabled: 1
+    path: Assets/Scenes/Rooftop_End.unity
+    guid: 91b0f889551df2e4b919d88f817a8280
+  - enabled: 1
+    path: Assets/Scenes/Graveyard.unity
+    guid: 8c332896f0b8d5045ad49b7d6a91b14f
+  - enabled: 0
+    path: Assets/Scenes/DemoEndScreen.unity
+    guid: ea3c1d22da3dd054eb5a2ab1f3cfc10e
+  m_configObjects: {}

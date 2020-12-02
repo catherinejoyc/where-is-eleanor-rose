@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{32F1D272-FCE0-48C2-B7F2-54A50EDDE0F4}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{32F1D272-FCE0-48C2-B7F2-54A50EDDE0F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank1" ID="{7F4FEDB1-1B57-4E73-A7B4-6443002B558F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_BTGlitch" ID="{B105CA3D-F0B2-4104-AD03-7C883387428F}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Minion_Footsteps" ID="{0571C73D-E97B-414E-9A6B-FE5588072899}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music_NoFade" ID="{ED074FB3-35A3-41A1-B797-30BA82D60095}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Nazar" ID="{7105AA61-4B60-4292-A3F4-6FCA60CE44EE}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Player_Footsteps" ID="{D2C01749-24FC-445E-8774-A6A01963B056}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{71B38482-065D-4516-B95E-53691AA681DA}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music" ID="{7A60E576-BCB3-452F-8F9D-06CD257F75DB}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_GlitchBT" ID="{EE4F7362-9D65-4544-AA1D-B6ADB20B6052}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Player_Footsteps" ID="{596D7E71-458D-457B-9057-33571EA4C0E9}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ClearSight" ID="{8D2D077B-129F-45FB-8D39-5D62E1D8C524}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_CSGlitch" ID="{7FE22133-C4BC-47B0-9CA7-651F881458ED}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_AtmoGraveyard" ID="{810E3DB0-F296-485F-8ADE-C7A907CC151B}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Daisy" ID="{5D9B55A6-F3B2-48D2-A603-371E9FEF04E7}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Minion_Footsteps" ID="{F6B2A5E9-42E6-49AD-A97D-FF36D7A2E0B3}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_CS_Trigger" ID="{EE4F867D-9736-4A13-9688-9E3896EA74B2}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_AtmoGraveyard" ID="{91F904F9-2E10-4E4D-BD9D-7B6B3A60B687}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_ClearSight" ID="{EC505679-C15C-4F12-80BE-FA4D08FAD0AD}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_TextSound" ID="{EE8F5E3A-7AC9-4FA9-8223-9EBC03DEA3C3}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_CSGlitch" ID="{0E61065C-235B-4FAE-91E7-61C391574236}" WorkUnitID="{82E1B83C-237C-41D9-BBA6-EB5F96CACBCD}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

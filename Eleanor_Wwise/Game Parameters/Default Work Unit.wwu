@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{45F31A0F-05F2-4057-86A0-78C363CBC366}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{45F31A0F-05F2-4057-86A0-78C363CBC366}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Lowpass_RTPC" ID="{F34B7CFF-3465-4D71-8F29-BE82EAA169A2}"/>
+				<GameParameter Name="PlayerLocation_RTPC" ID="{DCDD00EC-1904-4B7D-BBDC-FBE61A112DCF}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
