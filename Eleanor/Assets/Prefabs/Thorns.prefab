@@ -132,13 +132,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8127633198811903576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efee954c69f0d421086729bb8df1137f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  uniqueID: 2599549543476932713
+  uniqueID: 8984043262376250390
   points: []
   convex: 0
   minBoundsHeight: 1
