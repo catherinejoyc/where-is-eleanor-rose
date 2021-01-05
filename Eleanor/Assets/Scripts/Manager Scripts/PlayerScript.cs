@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Newtonsoft.Json.Linq;
 
 public enum State
 {
@@ -10,7 +11,7 @@ public enum State
     Clear
 }
 
-public class PlayerScript : MonoBehaviour
+public class PlayerScript : MonoBehaviour, ISerializable
 {
     static PlayerScript instance;
     public static PlayerScript Instance
@@ -249,7 +250,7 @@ public class PlayerScript : MonoBehaviour
             currState = State.Clear;
 
             //switch State of all IChangable
-            foreach(IChangable obj in FindObjectsOfType<Object>().OfType<IChangable>())
+            foreach (IChangable obj in FindObjectsOfType<Object>().OfType<IChangable>())
             {
                 obj.UpdateClearState();
             }
@@ -275,6 +276,45 @@ public class PlayerScript : MonoBehaviour
     public bool tutorialMode = false;
 
     public MinionScript pickedUpObj = null;
+
+    #region save data
+    public string _json;
+    public class SaveData{
+        public Vector2 _position;
+        public int _hp;
+        public float _csPoints;
+
+        public SaveData(Vector2 pos, int hp, float csPoints)
+        {
+            _position = pos;
+            _hp = hp;
+            _csPoints = csPoints;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        SaveData sd = new SaveData(this.transform.position, Daisies, SightPoints); //add data
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        this.transform.position = sd._position;
+        Daisies = sd._hp;
+        SightPoints = sd._csPoints;
+    }
+    #endregion
 
     private void Awake()
     {
