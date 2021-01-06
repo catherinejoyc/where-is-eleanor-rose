@@ -226,11 +226,8 @@ public class DialogScript : MonoBehaviour
 
     public void FinishDialog()
     {
-
         if (isFinished)
             return;
-
-        Debug.LogWarning("Finish Dialog.");
 
         // check for choices
         if (choices == null && nextDialogPart == null)
@@ -270,6 +267,9 @@ public class DialogScript : MonoBehaviour
         //if last dialog part, close off
         if (lastPartOfTheDialog)
         {
+            //save game
+            SaveGameManager.Instance.SaveGame();
+
             parentObject.SetActive(false);
 
             //change back vn image 

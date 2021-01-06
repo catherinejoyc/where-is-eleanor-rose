@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
+using System.Linq;
 
 [ExecuteInEditMode]
 public class SerializedObject : MonoBehaviour, ISerializable
@@ -9,8 +10,12 @@ public class SerializedObject : MonoBehaviour, ISerializable
     public string _uID;
 
     [SerializeField]
-    [HideInInspector]
     private int instanceID = 0;
+
+    private void Reset()
+    {
+        CreateNewID();
+    }
 
     public void CreateNewID()
     {
@@ -39,7 +44,7 @@ public class SerializedObject : MonoBehaviour, ISerializable
     public string Serialize()
     {
         List<ISerializable> serializableObj = new List<ISerializable>();
-        serializableObj.AddRange(GetComponentsInChildren<ISerializable>());
+        serializableObj.AddRange(GetComponentsInChildren<ISerializable>().Where(x => (Object)x != this));
 
         JObject jObj = new JObject();
 
