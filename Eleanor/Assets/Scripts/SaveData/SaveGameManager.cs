@@ -44,6 +44,7 @@ public class SaveGameManager : MonoBehaviour
 
         JObject jObjectScene = GenerateSceneJObject();
         string sceneName = SceneManager.GetActiveScene().name;
+
         _curSavegame["activeScene"] = sceneName;
 
         if (_curSavegame[sceneName] == null)
@@ -75,6 +76,20 @@ public class SaveGameManager : MonoBehaviour
         return jObjectScene;
     }
 
+    //Loads the whole savegame
+    public void LoadGame()
+    {
+        string saveFilePath = Application.persistentDataPath + "/" + saveName + ".sav";
+
+        StreamReader sr = new StreamReader(saveFilePath);
+        string json = sr.ReadToEnd();
+        sr.Close();
+
+        JObject jObjectSavegame = JObject.Parse(json);
+
+        LoadScene(jObjectSavegame["activeScene"].ToString(), jObjectSavegame);
+    }
+
 
     private void LoadScene(string sceneName, JObject savegame)
     {
@@ -83,7 +98,7 @@ public class SaveGameManager : MonoBehaviour
 
         Dictionary<string, SerializedObject> toLoadData = new Dictionary<string, SerializedObject>();
 
-        SerializedObject[] serializedObjects = FindObjectsOfType<SerializedObject>();
+        SerializedObject[] serializedObjects = Resources.FindObjectsOfTypeAll(typeof(SerializedObject)) as SerializedObject[];
 
         for (int i = 0; i < serializedObjects.Length; i++)
         {

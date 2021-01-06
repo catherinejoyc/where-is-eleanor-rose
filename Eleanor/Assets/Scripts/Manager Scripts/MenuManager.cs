@@ -44,7 +44,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    IEnumerator fadeAwayToStart()
+    IEnumerator fadeAwayToStart(string levelname)
     {
         // loop over 1 second
         for (float i = 0; i <= 1.5f; i += Time.deltaTime)
@@ -57,7 +57,23 @@ public class MenuManager : MonoBehaviour
 
         StopAllCoroutines();
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelname);
+    }
+
+    IEnumerator fadeAwayToResume()
+    {
+        // loop over 1 second
+        for (float i = 0; i <= 1.5f; i += Time.deltaTime)
+        {
+            // set color with i as alpha
+            blackScreen.color = new Color(0, 0, 0, i);
+            yield return null;
+        }
+
+
+        StopAllCoroutines();
+
+        SaveGameManager.Instance.LoadGame();
     }
 
     IEnumerator fadeAwayToQuit()
@@ -77,7 +93,13 @@ public class MenuManager : MonoBehaviour
     public void StartButtonPressed()
     {
         AudioManager.Instance.FadeStopMusic();
-        StartCoroutine(fadeAwayToStart());
+        StartCoroutine(fadeAwayToStart("Level0"));
+    }
+
+    public void ResumeButtonPressed()
+    {
+        AudioManager.Instance.FadeStopMusic();
+        StartCoroutine(fadeAwayToResume());
     }
 
     public void QuitButtonPressed()
