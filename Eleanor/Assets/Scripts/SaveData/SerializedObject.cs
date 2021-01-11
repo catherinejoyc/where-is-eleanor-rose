@@ -69,7 +69,7 @@ public class SerializedObject : MonoBehaviour, ISerializable
     {
         JObject o = JObject.Parse(json);
 
-        gameObject.name = o["goName"].ToString();
+        gameObject.name = o["name"].ToString();
 
 
         foreach (JObject jComp in o["components"].Children())

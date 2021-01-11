@@ -16,9 +16,14 @@ public class SaveGameManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
             instance = this;
+        }
         else
+        {
             Debug.Log("SaveGameManager already exists!");
+        }
     }
 
 
@@ -80,6 +85,7 @@ public class SaveGameManager : MonoBehaviour
     public void LoadGame()
     {
         string saveFilePath = Application.persistentDataPath + "/" + saveName + ".sav";
+        print("Loading: " + saveFilePath);
 
         StreamReader sr = new StreamReader(saveFilePath);
         string json = sr.ReadToEnd();
@@ -96,6 +102,16 @@ public class SaveGameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name != sceneName)
             SceneManager.LoadScene(sceneName);
 
+        StartCoroutine(LoadSavedObjects(sceneName, savegame));
+    }
+
+    private IEnumerator LoadSavedObjects(string sceneName, JObject savegame)
+    {
+        Debug.Log("Waiting for Scene");
+        yield return new WaitWhile(() => SceneManager.GetActiveScene().name == "sceneName");
+
+
+        Debug.Log("Start Loading Scene Objects");
         Dictionary<string, SerializedObject> toLoadData = new Dictionary<string, SerializedObject>();
 
         SerializedObject[] serializedObjects = Resources.FindObjectsOfTypeAll(typeof(SerializedObject)) as SerializedObject[];
@@ -119,5 +135,7 @@ public class SaveGameManager : MonoBehaviour
                 Debug.LogWarning("Did not deserialize " + jGO.Name + " because it is not in the scene");
             }
         }
+
+        Debug.Log("Finished Loading Scene Objects");
     }
 }
