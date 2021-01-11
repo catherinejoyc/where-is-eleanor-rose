@@ -52,10 +52,14 @@ public class SaveGameManager : MonoBehaviour
 
         _curSavegame["activeScene"] = sceneName;
 
-        if (_curSavegame[sceneName] == null)
-        { _curSavegame.Add(sceneName, jObjectScene); }
-        else
-        { _curSavegame[sceneName] = jObjectScene; }
+        if (_curSavegame[sceneName] == null) 
+        { 
+            _curSavegame.Add(sceneName, jObjectScene); 
+        }
+        else //scene exists
+        { 
+            _curSavegame[sceneName] = jObjectScene; 
+        }
 
         StreamWriter sw = new StreamWriter(saveFilePath);
         sw.WriteLine(_curSavegame.ToString());
@@ -69,12 +73,12 @@ public class SaveGameManager : MonoBehaviour
         List<ISerializable> serializedGOs = new List<ISerializable>();
 
 
-        serializedGOs.AddRange(FindObjectsOfType<SerializedObject>());
+        serializedGOs.AddRange(Resources.FindObjectsOfTypeAll(typeof(SerializedObject)) as SerializedObject[]);
 
         JObject jObjectScene = new JObject();
         for (int i = 0; i < serializedGOs.Count; i++)
         {
-            string goJson = serializedGOs[i].Serialize();
+            //string goJson = serializedGOs[i].Serialize();
             JObject jGO = JObject.Parse(serializedGOs[i].Serialize());
             jObjectScene.Add(jGO.First);
         }
@@ -131,11 +135,9 @@ public class SaveGameManager : MonoBehaviour
             }
             else
             {
-                //deserialization of Objects which were created at runtime
                 Debug.LogWarning("Did not deserialize " + jGO.Name + " because it is not in the scene");
             }
         }
-
         Debug.Log("Finished Loading Scene Objects");
     }
 }

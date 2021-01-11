@@ -22210,8 +22210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uID: f013efaa-aa89-4dd8-9adc-b429f134f5c8
-  instanceID: 39770
+  _uID: 48a6e312-eeb1-451d-a092-448664c5468f
+  instanceID: 48546
 --- !u!1001 &1505153014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59901,6 +59901,16 @@ PrefabInstance:
       propertyPath: nextDialog
       value: 
       objectReference: {fileID: 1391433198}
+    - target: {fileID: 1221619335196670367, guid: f1e1ffa3acbea624d9b4273a760bee91,
+        type: 3}
+      propertyPath: lastPartOfTheDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221619335196670367, guid: f1e1ffa3acbea624d9b4273a760bee91,
+        type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 2118411301}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1e1ffa3acbea624d9b4273a760bee91, type: 3}
 --- !u!4 &1690865242 stripped
@@ -61090,8 +61100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uID: 465c61bd-9c35-42db-95fd-81974d543595
-  instanceID: -73742
+  _uID: a3bebd7e-1ba8-40ee-8dd9-87df7128b3a3
+  instanceID: 48702
 --- !u!1001 &339853632626802574
 PrefabInstance:
   m_ObjectHideFlags: 0

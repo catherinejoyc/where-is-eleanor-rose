@@ -402,6 +402,8 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void StartInitialFade()
+    { StartCoroutine(InitialFade()); }
     //Initial Fade
     IEnumerator InitialFade()
     {
