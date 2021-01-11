@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Newtonsoft.Json.Linq;
 
-public class DialogScript : MonoBehaviour
+public class DialogScript : MonoBehaviour, ISerializable
 {
     public string[] dialog;
     public float yOffset;
@@ -117,6 +118,42 @@ public class DialogScript : MonoBehaviour
     {
         if (lockedArea != null)
             lockedArea.Unlock();
+    }
+    #endregion
+
+    #region Save Data
+    public string _json;
+    public class SaveData
+    {
+        public bool _active;
+
+        public SaveData(bool active)
+        {
+            _active = active;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        bool active = (isFinished) ? false : true;
+
+        SaveData sd = new SaveData(active);
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        parentObject.SetActive(sd._active);
     }
     #endregion
 
@@ -268,6 +305,7 @@ public class DialogScript : MonoBehaviour
         if (lastPartOfTheDialog)
         {
             //save game
+            isFinished = true;
             SaveGameManager.Instance.SaveGame();
 
             parentObject.SetActive(false);

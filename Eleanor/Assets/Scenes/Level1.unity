@@ -4454,7 +4454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7b6bdb9a17a1645bdd0f1643bd593a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveName: Level1-Denial
 --- !u!1 &615096135
 GameObject:
   m_ObjectHideFlags: 0
@@ -17769,6 +17768,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1083356669}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1112242934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 632345967, guid: 9a31069866aa10a469e47ccf875451d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 262153177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1112242935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112242934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: dfcb6455-23c0-43a2-82fb-7484d0d07f69
+  instanceID: 0
 --- !u!1 &1116384004
 GameObject:
   m_ObjectHideFlags: 0
@@ -22192,7 +22211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uID: f013efaa-aa89-4dd8-9adc-b429f134f5c8
-  instanceID: 0
+  instanceID: 39770
 --- !u!1001 &1505153014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61053,6 +61072,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 262153177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2118411301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1221619335196670364, guid: f1e1ffa3acbea624d9b4273a760bee91,
+    type: 3}
+  m_PrefabInstance: {fileID: 1690865241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118411302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118411301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: 465c61bd-9c35-42db-95fd-81974d543595
+  instanceID: -73742
 --- !u!1001 &339853632626802574
 PrefabInstance:
   m_ObjectHideFlags: 0
