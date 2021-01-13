@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Pathfinding;
+using Newtonsoft.Json.Linq;
 
-public class EmbodimentScript : MonoBehaviour
+public class EmbodimentScript : MonoBehaviour, ISerializable
 {
     AIDestinationSetter destinationSetter;
     AIPath aiPath;
@@ -12,7 +13,6 @@ public class EmbodimentScript : MonoBehaviour
 
     #region pick up
     public Animation anim;
-    bool moving = false;
 
     public void PickUp()
     {
@@ -34,6 +34,52 @@ public class EmbodimentScript : MonoBehaviour
 
         embodimentAnimator.SetTrigger("transformed");
         sprRenderer.sprite = transformedSpr;
+    }
+    #endregion
+
+    #region save data
+    public string _json;
+    public class SaveData
+    {
+        public Vector2 _position;
+        public bool _isFollowing;
+        public bool _isPlaced;
+
+        public SaveData(Vector2 pos, bool isFollowing, bool isPlaced)
+        {
+            _position = pos;
+            _isFollowing = isFollowing;
+            _isPlaced = isPlaced;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        SaveData sd = new SaveData(this.transform.position, (destinationSetter.target == null) ? false : true, placed); //add data
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        this.transform.position = sd._position;
+        if (placed)
+        {
+            Place();
+        }
+        else
+        {
+            destinationSetter.target = (sd._isFollowing) ? PlayerScript.Instance.transform : null;
+        }
     }
     #endregion
 
