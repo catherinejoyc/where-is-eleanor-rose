@@ -304,10 +304,6 @@ public class DialogScript : MonoBehaviour, ISerializable
         //if last dialog part, close off
         if (lastPartOfTheDialog)
         {
-            //save game
-            isFinished = true;
-            SaveGameManager.Instance.SaveGame();
-
             parentObject.SetActive(false);
 
             //change back vn image 
@@ -349,6 +345,10 @@ public class DialogScript : MonoBehaviour, ISerializable
                 UIManager.Instance.ActivateDepression();
                 break;
         }
+
+        //save game
+        isFinished = true;
+        SaveGameManager.Instance.SaveGame();
 
         //deactivate this dialog
         gameObject.SetActive(false);

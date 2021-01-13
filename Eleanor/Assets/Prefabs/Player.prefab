@@ -488,9 +488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5981110279373396472}
   bodyColl: {fileID: 3667748010617477214}
+  playerAnimator: {fileID: 1421572936}
   daisies: 3
   dead: 0
-  playerAnimator: {fileID: 1421572936}
   moveSpeed: 5
   csMoveSpeed: 7
   maxSightPoints: 10
@@ -501,6 +501,7 @@ MonoBehaviour:
   visualNovelMode: 0
   tutorialMode: 0
   pickedUpObj: {fileID: 0}
+  _json: 
 --- !u!50 &5981110279373396472
 Rigidbody2D:
   serializedVersion: 4

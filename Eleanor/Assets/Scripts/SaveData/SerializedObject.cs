@@ -22,25 +22,6 @@ public class SerializedObject : MonoBehaviour, ISerializable
         _uID = System.Guid.NewGuid().ToString();
     }
 
-    void Awake()
-    {
-        if (Application.isPlaying == false)
-        {
-            if (instanceID != GetInstanceID())
-            {
-                if (instanceID == 0)
-                {
-                    instanceID = GetInstanceID();
-                }
-                else
-                {
-                    instanceID = GetInstanceID();
-                    GetComponent<SerializedObject>().CreateNewID();
-                }
-            }
-        }
-    }
-
     public string Serialize()
     {
         List<ISerializable> serializableObj = new List<ISerializable>();

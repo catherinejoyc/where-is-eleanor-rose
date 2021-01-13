@@ -72,7 +72,6 @@ public class SaveGameManager : MonoBehaviour
     {
         List<ISerializable> serializedGOs = new List<ISerializable>();
 
-
         serializedGOs.AddRange(Resources.FindObjectsOfTypeAll(typeof(SerializedObject)) as SerializedObject[]);
 
         JObject jObjectScene = new JObject();
@@ -131,7 +130,7 @@ public class SaveGameManager : MonoBehaviour
         {
             if (toLoadData.ContainsKey(jGO.Name))
             {
-
+                Debug.Log("Loaded " + jGO.Name + " sucessfully!");
                 toLoadData[jGO.Name].Deserialize(jGO.Value.ToString());
             }
             else
