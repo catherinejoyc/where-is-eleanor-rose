@@ -78,7 +78,7 @@ public class SaveGameManager : MonoBehaviour
         JObject jObjectScene = new JObject();
         for (int i = 0; i < serializedGOs.Count; i++)
         {
-            //string goJson = serializedGOs[i].Serialize();
+            string goJson = serializedGOs[i].Serialize();
             JObject jGO = JObject.Parse(serializedGOs[i].Serialize());
             jObjectScene.Add(jGO.First);
         }
@@ -116,6 +116,7 @@ public class SaveGameManager : MonoBehaviour
 
 
         Debug.Log("Start Loading Scene Objects");
+
         Dictionary<string, SerializedObject> toLoadData = new Dictionary<string, SerializedObject>();
 
         SerializedObject[] serializedObjects = Resources.FindObjectsOfTypeAll(typeof(SerializedObject)) as SerializedObject[];
@@ -138,6 +139,14 @@ public class SaveGameManager : MonoBehaviour
                 Debug.LogWarning("Did not deserialize " + jGO.Name + " because it is not in the scene");
             }
         }
+
+        //turn off visual novel mode in Level 1
+        if (sceneName == "Level1")
+        {
+            PlayerScript.Instance.visualNovelMode = false;
+            UIManager.Instance.visualNovelPanel.SetActive(false);
+        }
+
         Debug.Log("Finished Loading Scene Objects");
     }
 }

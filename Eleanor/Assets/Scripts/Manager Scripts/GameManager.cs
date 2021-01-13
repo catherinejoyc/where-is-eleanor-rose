@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("GameManager already exists!");
     }
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
