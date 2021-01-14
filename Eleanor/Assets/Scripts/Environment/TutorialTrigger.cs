@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Newtonsoft.Json.Linq;
 
-public class TutorialTrigger : MonoBehaviour
+public class TutorialTrigger : MonoBehaviour, ISerializable
 {
     bool currentlyActive;
 
@@ -13,6 +14,46 @@ public class TutorialTrigger : MonoBehaviour
 
     [Tooltip("activates after this tutorial, usually the next tutorial")]
     public GameObject activateableGO;
+
+    #region Save Data
+    public string _json;
+    public class SaveData
+    {
+        public bool _active;
+        public bool _curActive;
+
+        public SaveData(bool active, bool curActive)
+        {
+            _active = active;
+            _curActive = curActive;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        bool active = (isFinished) ? false : true;
+        bool curActive = currentlyActive;
+
+        SaveData sd = new SaveData(active, curActive);
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        currentlyActive = sd._curActive;
+        this.gameObject.SetActive(sd._active);
+    }
+    #endregion
 
     void Say(string s)
     {
@@ -71,6 +112,10 @@ public class TutorialTrigger : MonoBehaviour
                 if (dialog.Length > 0)
                 {
                     PlayerScript.Instance.tutorialMode = true;
+
+                    //save game
+                    SaveGameManager.Instance.SaveGame();
+
                     Say(dialog[0]);
                 }
             }
