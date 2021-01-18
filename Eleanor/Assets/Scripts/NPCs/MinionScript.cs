@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using Newtonsoft.Json.Linq;
 
-public class MinionScript : MonoBehaviour, IChangable
+public class MinionScript : MonoBehaviour, IChangable, ISerializable
 {
-    enum MinionState
+    public enum MinionState
     {
         Object,
         PickedUp,
@@ -367,6 +368,68 @@ public class MinionScript : MonoBehaviour, IChangable
         bodyColl.enabled = false;
 
         UIManager.Instance.StopPopUp();
+    }
+    #endregion
+
+    #region save data
+    public string _json;
+    public class SaveData
+    {
+        public Vector2 _position;
+        public MinionState _minionState;
+        public float _currentPickUpTime;
+
+        public SaveData(Vector2 pos, MinionState minionState, float curPickUpTime)
+        {
+            _position = pos;
+            _minionState = minionState;
+            _currentPickUpTime = curPickUpTime;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        SaveData sd = new SaveData(this.transform.position, currMinionState, currentPickUpTime);
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        switch (sd._minionState)
+        {
+            case MinionState.Object:
+                UpdateObject();
+                break;
+            case MinionState.Following:
+                UpdateFollowing(PlayerScript.Instance.gameObject);
+                break;
+            case MinionState.Attacking:
+                UpdateAttacking();
+                break;
+            case MinionState.PickedUp:
+                UpdatePickedUp();
+                currentPickUpTime = sd._currentPickUpTime;
+                break;
+            case MinionState.Returning:
+                UpdateReturning();
+                break;
+            case MinionState.Idle:
+                UpdateIdle();
+                break;
+            case MinionState.Dead:
+                Die();
+                break;
+        }
     }
     #endregion
 

@@ -139,12 +139,9 @@ public class SaveGameManager : MonoBehaviour
             }
         }
 
-        //turn off visual novel mode in Level 1
-        if (sceneName == "Level1")
-        {
-            PlayerScript.Instance.visualNovelMode = false;
-            UIManager.Instance.visualNovelPanel.SetActive(false);
-        }
+        //turn off visual novel mode
+        PlayerScript.Instance.visualNovelMode = false;
+        UIManager.Instance.visualNovelPanel.SetActive(false);
 
         Debug.Log("Finished Loading Scene Objects");
     }

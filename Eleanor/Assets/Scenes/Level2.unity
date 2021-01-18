@@ -6115,6 +6115,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9f5069439a91a4a9e511c5f85fffd7, type: 3}
+--- !u!1 &148548601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2794824783434207342, guid: b9e40d9c2da7a574eb434cee62a76ada,
+    type: 3}
+  m_PrefabInstance: {fileID: 2436855607723323023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &148548602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148548601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: b804440a-819b-4034-b253-4ed36151f731
+  instanceID: 0
 --- !u!1001 &154730007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33385,6 +33405,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9f5069439a91a4a9e511c5f85fffd7, type: 3}
+--- !u!1 &467535028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2794824783434207342, guid: b9e40d9c2da7a574eb434cee62a76ada,
+    type: 3}
+  m_PrefabInstance: {fileID: 249406056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &467535029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467535028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: b682f3e3-ca68-44e8-87d3-ac5aab0319b1
+  instanceID: 0
 --- !u!1001 &469980884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73292,137 +73332,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 927118874}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1043556943
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1755253087}
-    m_Modifications:
-    - target: {fileID: 5722898907017574026, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_Name
-      value: This place is weird.
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574026, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -41.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 37.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: dialog.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: finishedText
-      value: I have to find someone... :Georgia Daisy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: dialog.Array.data[0]
-      value: I hate this place... :Georgia Daisy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: dialog.Array.data[1]
-      value: but that cat girl said I have to find another student like her... :Georgia
-        Daisy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: activateable
-      value: 
-      objectReference: {fileID: 1073717953}
-    - target: {fileID: 5722898907017574029, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-        type: 3}
-      propertyPath: activateableGO
-      value: 
-      objectReference: {fileID: 1073717953}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb0f17b590be6d741bdd6e5e2855c88b, type: 3}
---- !u!4 &1043556944 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5722898907017574028, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1043556943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1043556945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5722898907017574026, guid: cb0f17b590be6d741bdd6e5e2855c88b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1043556943}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1043556946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043556945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _uID: c88998b0-9baa-4095-b4dc-f07fae40fd38
-  instanceID: 0
 --- !u!4 &1053587577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3474333472893118873, guid: e8c6aec1d5ae103469f1b5f62bc28e81,
@@ -91020,7 +90929,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1043556944}
+  - {fileID: 6102781269822792053}
   - {fileID: 1313496741}
   - {fileID: 823777825}
   - {fileID: 259009735}
@@ -103081,6 +102990,110 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa9051eb62f91743b5a357fe7bbe27e, type: 3}
+--- !u!61 &6102781269822792050
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102781269822792055}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &6102781269822792052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102781269822792055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da628e74473971c43b615f92e3fb8cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+  - I hate this place... :Georgia Daisy
+  - but that cat girl said I have to find another student like her... :Georgia Daisy
+  yOffset: 0
+  sprites:
+  - {fileID: 21300000, guid: 175d8abd3b03263488f2b924e86e1590, type: 3}
+  - {fileID: 21300000, guid: 175d8abd3b03263488f2b924e86e1590, type: 3}
+  background: {fileID: 0}
+  nextDialog: {fileID: 1073717953}
+  flowerState: 4
+  embodiment: {fileID: 0}
+  embodimentAction: 2
+  choices: {fileID: 0}
+  nextDialogPart: {fileID: 0}
+  pureVisualNovelScene: 1
+  lockedArea: {fileID: 0}
+  _json: 
+  lastPartOfTheDialog: 0
+  parentObject: {fileID: 6102781269822792055}
+--- !u!4 &6102781269822792053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102781269822792055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.64, y: -3.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1755253087}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6102781269822792055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6102781269822792053}
+  - component: {fileID: 6102781269822792052}
+  - component: {fileID: 6102781269822792050}
+  - component: {fileID: 6102781269822792056}
+  m_Layer: 0
+  m_Name: This place is weird.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &6102781269822792056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102781269822792055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: 2743dc73-82d5-46ad-a80d-f8c50f411ea9
+  instanceID: 0
 --- !u!1001 &6960062361208680445
 PrefabInstance:
   m_ObjectHideFlags: 0
