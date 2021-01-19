@@ -354,6 +354,4 @@ public class DialogScript : MonoBehaviour, ISerializable
         gameObject.SetActive(false);
         return;
     }
-
-
 }

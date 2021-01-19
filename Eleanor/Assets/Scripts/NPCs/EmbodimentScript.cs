@@ -72,7 +72,7 @@ public class EmbodimentScript : MonoBehaviour, ISerializable
         SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
 
         this.transform.position = sd._position;
-        if (placed)
+        if (sd._isPlaced)
         {
             Place();
         }
