@@ -146,12 +146,6 @@ public class PlayerScript : MonoBehaviour, ISerializable
     public void Respawn()
     {
         dead = false;
-
-        //refill lives
-        Daisies = 3;
-
-        //refill clear sight
-        SightPoints = maxSightPoints;
     }
 
     #endregion

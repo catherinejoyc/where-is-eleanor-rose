@@ -489,6 +489,8 @@ public class UIManager : MonoBehaviour
                 break;
         }
 
+        //load last save game
+        SaveGameManager.Instance.LoadGame();
     }
     void DeathSay(string s)
     {

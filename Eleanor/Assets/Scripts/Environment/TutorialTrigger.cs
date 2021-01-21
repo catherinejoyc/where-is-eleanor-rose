@@ -6,11 +6,11 @@ using Newtonsoft.Json.Linq;
 
 public class TutorialTrigger : MonoBehaviour, ISerializable
 {
-    bool currentlyActive;
+    public bool currentlyActive;
 
     public string[] dialog;
     int index = 0;
-    bool isFinished = false;
+    public bool isFinished = false;
 
     [Tooltip("activates after this tutorial, usually the next tutorial")]
     public GameObject activateableGO;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlowerbudLevel3 : MonoBehaviour
 {
     public GameObject nextDialog;
+    public TutorialTrigger flowerbudsTut;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !collision.isTrigger)
@@ -16,7 +17,8 @@ public class FlowerbudLevel3 : MonoBehaviour
                     nextDialog.SetActive(true);
 
                 //delete
-                gameObject.SetActive(false);
+                flowerbudsTut.currentlyActive = false;
+                flowerbudsTut.isFinished = true;
             }
         }
     }

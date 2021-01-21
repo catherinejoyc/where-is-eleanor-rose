@@ -1,13 +1,61 @@
-﻿using System.Collections;
+﻿using Newtonsoft.Json.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlowerBuds : MonoBehaviour
+public class FlowerBuds : MonoBehaviour, ISerializable
 {
     public ParticleSystem ps;
     public Sprite buds;
     public Sprite flowers;
     public Collider2D bodyColl;
+
+    #region Save Data
+    public string _json;
+    public class SaveData
+    {
+        public bool _active;
+
+        public SaveData(bool active)
+        {
+            _active = active;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        SaveData sd = new SaveData(bodyColl.enabled);
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        if(!sd._active)
+        {
+            //change appearance
+            foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+            {
+                sr.sprite = flowers;
+            }
+
+            //deactivate bodyColl
+            bodyColl.enabled = false;
+
+            //deactivate self
+            GetComponent<Collider2D>().enabled = false;
+        }
+    }
+    #endregion
 
     void Bloom()
     {

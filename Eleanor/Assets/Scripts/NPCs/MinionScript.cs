@@ -239,8 +239,6 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
     //pop up text
     float popUpStart;
-    bool firstWarningSent = false;
-    bool secondWarningSent = false;
 
     void UpdatePickedUp()
     {
@@ -252,9 +250,6 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         {
             //start countdown
             currentPickUpTime = 0;
-
-            firstWarningSent = false;
-            secondWarningSent = false;
 
             currMinionState = MinionState.PickedUp;
 
@@ -335,19 +330,19 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         //remove from player
         PlayerScript.Instance.pickedUpObj = null;
 
+        currMinionState = MinionState.Dead;
+        //set to transformed
+        transformed = true;
+
         Destroy(spawnPointGO);
 
-        //UpdateClearState();
-        UpdateObject();
         GetComponent<SpriteRenderer>().sprite = objSpr;
         GetComponent<Animator>().enabled = false;
 
-        currMinionState = MinionState.Dead;
         trigger.enabled = false;
         bodyColl.enabled = false;
 
-        //set to transformed
-        transformed = true;
+
 
         StartCoroutine(FadeSprite());
 
@@ -376,13 +371,36 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
     public class SaveData
     {
         public Vector2 _position;
-        public MinionState _minionState;
+        public int _minionState;
         public float _currentPickUpTime;
 
         public SaveData(Vector2 pos, MinionState minionState, float curPickUpTime)
         {
             _position = pos;
-            _minionState = minionState;
+            switch(minionState)
+            {
+                case MinionState.Object:
+                    _minionState = 0;
+                    break;
+                case MinionState.PickedUp:
+                    _minionState = 1;
+                    break;
+                case MinionState.Idle:
+                    _minionState = 2;
+                    break;
+                case MinionState.Following:
+                    _minionState = 3;
+                    break;
+                case MinionState.Returning:
+                    _minionState = 4;
+                    break;
+                case MinionState.Attacking:
+                    _minionState = 5;
+                    break;
+                case MinionState.Dead:
+                    _minionState = 6;
+                    break;
+            }
             _currentPickUpTime = curPickUpTime;
         }
     }
@@ -392,6 +410,8 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         JObject jObj = new JObject();
 
         jObj.Add("componentName", GetType().Name); //script/ component name
+
+        Debug.Log(gameObject.name + ": " + currMinionState);
 
         SaveData sd = new SaveData(this.transform.position, currMinionState, currentPickUpTime);
         jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
@@ -405,29 +425,41 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
         SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
 
+        this.transform.position = sd._position;
         switch (sd._minionState)
         {
-            case MinionState.Object:
+            case 0:
                 UpdateObject();
                 break;
-            case MinionState.Following:
+            case 3:
                 UpdateFollowing(PlayerScript.Instance.gameObject);
                 break;
-            case MinionState.Attacking:
+            case 5:
                 UpdateAttacking();
                 break;
-            case MinionState.PickedUp:
-                UpdatePickedUp();
-                currentPickUpTime = sd._currentPickUpTime;
+            case 1:
+                Debug.LogError("Minion was loaded as 'PickedUp' which should not be possible!");
                 break;
-            case MinionState.Returning:
+            case 4:
                 UpdateReturning();
                 break;
-            case MinionState.Idle:
+            case 2:
                 UpdateIdle();
                 break;
-            case MinionState.Dead:
-                Die();
+            case 6:
+                currMinionState = MinionState.Dead;
+                //set to transformed
+                transformed = true;
+
+                Destroy(spawnPointGO);
+
+                GetComponent<SpriteRenderer>().sprite = objSpr;
+                GetComponent<Animator>().enabled = false;
+
+                trigger.enabled = false;
+                bodyColl.enabled = false;
+
+                StartCoroutine(FadeSprite());
                 break;
         }
     }
@@ -440,6 +472,7 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         spawnPointGO.transform.position = this.transform.position;
 
         CurrState = State.Normal;
+        UpdateIdle();
 
         minionAnimator = GetComponent<Animator>();
 
@@ -489,6 +522,8 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
                     UIManager.Instance.StopPopUp();
                 }
                 break;
+            case MinionState.Dead:
+                break;
         }
 
         //pathfinding
@@ -505,7 +540,7 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && currMinionState != MinionState.Dead)
         {
             UpdateFollowing(collision.gameObject);
         }
@@ -513,7 +548,7 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && currMinionState != MinionState.Dead)
         {
             UpdateReturning();
 
