@@ -313,7 +313,14 @@ public class PlayerScript : MonoBehaviour, ISerializable
         if (sd._clearSightAvailable)
         {
             clearSightAvailable = true;
-            UIManager.Instance.ShowClearSightUI();
+            try
+            {
+                UIManager.Instance.ShowClearSightUI();
+            }
+            catch
+            {
+                Debug.LogWarning("Clear Sight Bar not assigned in UIManager!");
+            }
         }
     }
     #endregion

@@ -68930,6 +68930,11 @@ PrefabInstance:
       propertyPath: embodiment
       value: 
       objectReference: {fileID: 645316273}
+    - target: {fileID: 1310758411425684453, guid: f1513b81fae305642a8f368da6b36d2c,
+        type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 789272782}
     - target: {fileID: 691852738, guid: f1513b81fae305642a8f368da6b36d2c, type: 3}
       propertyPath: nextDialog
       value: 
@@ -101260,6 +101265,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5236325653033350370, guid: ae4e649a48251c7498ba2251f133b104,
+        type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 1683942998}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae4e649a48251c7498ba2251f133b104, type: 3}
 --- !u!4 &1973177668 stripped
@@ -101461,6 +101471,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1984543527}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1984543530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984543529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: 8b6fd9c7-bed2-4116-be68-b36c82085d2f
+  instanceID: 0
 --- !u!4 &1988283371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8506728958096665581, guid: 7dc7dcd4b6ffac141b593db4928ec5d7,
@@ -103045,8 +103069,10 @@ MonoBehaviour:
   pureVisualNovelScene: 1
   lockedArea: {fileID: 0}
   _json: 
-  lastPartOfTheDialog: 0
+  lastPartOfTheDialog: 1
   parentObject: {fileID: 6102781269822792055}
+  isLevel1Path: 0
+  otherPath: {fileID: 0}
 --- !u!4 &6102781269822792053
 Transform:
   m_ObjectHideFlags: 0
