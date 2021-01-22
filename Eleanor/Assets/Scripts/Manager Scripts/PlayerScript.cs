@@ -277,12 +277,14 @@ public class PlayerScript : MonoBehaviour, ISerializable
         public Vector2 _position;
         public int _hp;
         public float _csPoints;
+        public bool _clearSightAvailable;
 
-        public SaveData(Vector2 pos, int hp, float csPoints)
+        public SaveData(Vector2 pos, int hp, float csPoints, bool csAvailable)
         {
             _position = pos;
             _hp = hp;
             _csPoints = csPoints;
+            _clearSightAvailable = csAvailable;
         }
     }
 
@@ -292,7 +294,7 @@ public class PlayerScript : MonoBehaviour, ISerializable
 
         jObj.Add("componentName", GetType().Name); //script/ component name
 
-        SaveData sd = new SaveData(this.transform.position, Daisies, SightPoints); //add data
+        SaveData sd = new SaveData(this.transform.position, Daisies, SightPoints, clearSightAvailable); //add data
         jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
 
         _json = jObj.ToString();
@@ -307,6 +309,12 @@ public class PlayerScript : MonoBehaviour, ISerializable
         this.transform.position = sd._position;
         Daisies = sd._hp;
         SightPoints = sd._csPoints;
+
+        if (sd._clearSightAvailable)
+        {
+            clearSightAvailable = true;
+            UIManager.Instance.ShowClearSightUI();
+        }
     }
     #endregion
 

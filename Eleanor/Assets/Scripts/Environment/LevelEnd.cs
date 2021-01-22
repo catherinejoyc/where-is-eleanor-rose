@@ -4,11 +4,51 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.UI;
+using Newtonsoft.Json.Linq;
 
-public class LevelEnd : MonoBehaviour
+public class LevelEnd : MonoBehaviour, ISerializable
 {
     public int nextLevel;
     public bool endOnAwake;
+
+    #region Save Data
+    public string _json;
+    public class SaveData
+    {
+        public bool _active;
+
+        public SaveData(bool active)
+        {
+            _active = active;
+        }
+    }
+
+    public string Serialize()
+    {
+        JObject jObj = new JObject();
+
+        jObj.Add("componentName", GetType().Name); //script/ component name
+
+        bool active = this.gameObject.activeSelf;
+
+        SaveData sd = new SaveData(active);
+        jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
+
+        _json = jObj.ToString();
+        return _json;
+    }
+    public void Deserialize(string json)
+    {
+        JObject jObj = JObject.Parse(json);
+
+        SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
+
+        if (sd._active)
+        {
+            gameObject.SetActive(sd._active);
+        }
+    }
+    #endregion
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -139,7 +139,7 @@ public class DialogScript : MonoBehaviour, ISerializable
 
         jObj.Add("componentName", GetType().Name); //script/ component name
 
-        bool active = (isFinished) ? false : true;
+        bool active = !isFinished;
 
         SaveData sd = new SaveData(active);
         jObj.Add("data", JObject.Parse(JsonUtility.ToJson(sd)));
@@ -153,7 +153,15 @@ public class DialogScript : MonoBehaviour, ISerializable
 
         SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
 
-        parentObject.SetActive(sd._active);
+        if (sd._active)
+        {
+            parentObject.SetActive(sd._active);
+        }
+        else
+        {
+            isFinished = true;
+            parentObject.SetActive(false);
+        }
     }
     #endregion
 
@@ -161,6 +169,9 @@ public class DialogScript : MonoBehaviour, ISerializable
     [Header("Close off")]
     public bool lastPartOfTheDialog; //if true, disables parent object after this dialog --> FinishDialog()
     public GameObject parentObject; //ParentObject, usually named VNDialog_ParentTrigger
+    //set the other path as finished as well
+    public bool isLevel1Path;
+    public DialogScript otherPath;
 
     private void Awake()
     {
@@ -344,6 +355,12 @@ public class DialogScript : MonoBehaviour, ISerializable
             case MemoryFlower.Depression:
                 UIManager.Instance.ActivateDepression();
                 break;
+        }
+
+        //other path
+        if (isLevel1Path)
+        {
+            otherPath.isFinished = true;
         }
 
         //save game

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class MenuManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class MenuManager : MonoBehaviour
     }
 
     public Image blackScreen;
+    public Button resumeButton;
     Coroutine fadeInCor;
 
     private void Start()
@@ -32,6 +34,13 @@ public class MenuManager : MonoBehaviour
 
         //start blackScreen
         fadeInCor = StartCoroutine(fadeIn());
+
+        //check if save game exists
+        string saveFilePath = Application.persistentDataPath + "/SaveGame.sav";
+        if (!File.Exists(saveFilePath))
+        {
+            resumeButton.interactable = false;
+        }
     }
 
     IEnumerator fadeIn()
