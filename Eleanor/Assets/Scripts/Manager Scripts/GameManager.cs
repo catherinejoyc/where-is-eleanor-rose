@@ -63,6 +63,9 @@ public class GameManager : MonoBehaviour
         //hide controls
         HideControls();
 
+        //stop footsteps
+        AudioManager.Instance.SuddenstopFootsteps();
+
         //Activate Pause Menu Panel
         UIManager.Instance.ActivateMenu();
 

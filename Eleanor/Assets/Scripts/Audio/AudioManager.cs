@@ -67,7 +67,7 @@ public class AudioManager : MonoBehaviour
     public void StopAllAudio()
     {
         SuddenStopMusic();
-        StopWalking();
+        SuddenstopFootsteps();
         StopCSGlitch();
         StopClearSight();
     }
@@ -128,6 +128,11 @@ public class AudioManager : MonoBehaviour
             isWalking = false;
             Stop_Player_Footsteps.Post(gameObject);
         }
+    }
+
+    public void SuddenstopFootsteps()
+    {
+        Stop_Player_Footsteps.Post(gameObject);
     }
     #endregion
 
