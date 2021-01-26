@@ -54,6 +54,19 @@ public class FlowerBuds : MonoBehaviour, ISerializable
             //deactivate self
             GetComponent<Collider2D>().enabled = false;
         }
+        else
+        {
+            //change appearance
+            foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>())
+            {
+                sr.sprite = buds;
+            }
+
+            foreach (Collider2D coll in GetComponents<Collider2D>())
+            {
+                coll.enabled = true;
+            }
+        }
     }
     #endregion
 

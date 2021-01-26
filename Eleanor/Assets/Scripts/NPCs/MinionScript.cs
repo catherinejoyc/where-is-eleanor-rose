@@ -284,30 +284,35 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         //transform back into monster if not already transformed
         if (currentPickUpTime >= countdownTime && !transformed)
         {
-            //make player invincible
-            PlayerScript.Instance.StartInvincibility();
-
-            //remove from ui
-            UIManager.Instance.DeactivateObjImage();
-
-            //change minion state
-            if (destinationSetter.target == null)
-                UpdateReturning();
-            else
-                UpdateFollowing(destinationSetter.target.gameObject);
-
-            //Update State
-            UpdateNormalState();
-
-            //remove from player
-            PlayerScript.Instance.pickedUpObj = null;
-
-            //show sprite
-            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
-
-            //activate collider
-            bodyColl.enabled = true;
+            TransformBackToMonster();
         }
+    }
+
+    void TransformBackToMonster()
+    {
+        //make player invincible
+        PlayerScript.Instance.StartInvincibility();
+
+        //remove from ui
+        UIManager.Instance.DeactivateObjImage();
+
+        //change minion state
+        if (destinationSetter.target == null)
+            UpdateReturning();
+        else
+            UpdateFollowing(destinationSetter.target.gameObject);
+
+        //Update State
+        UpdateNormalState();
+
+        //remove from player
+        PlayerScript.Instance.pickedUpObj = null;
+
+        //show sprite
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+
+        //activate collider
+        bodyColl.enabled = true;
     }
     #endregion
 
@@ -363,6 +368,11 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
         bodyColl.enabled = false;
 
         UIManager.Instance.StopPopUp();
+    }
+    void Revive()
+    {
+        currMinionState = MinionState.Idle;
+        transformed = false;
     }
     #endregion
 
@@ -425,25 +435,41 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
         SaveData sd = JsonUtility.FromJson<SaveData>(jObj["data"].ToString());
 
-        this.transform.position = sd._position;
+        this.transform.position = sd._position;       
+
         switch (sd._minionState)
         {
             case 0:
+                //remove from player and update to normal state
+                Revive();
+                TransformBackToMonster();
                 UpdateObject();
                 break;
             case 3:
+                //remove from player and update to normal state
+                Revive();
+                TransformBackToMonster();
                 UpdateFollowing(PlayerScript.Instance.gameObject);
                 break;
             case 5:
+                //remove from player and update to normal state
+                Revive();
+                TransformBackToMonster();
                 UpdateAttacking();
                 break;
             case 1:
                 Debug.LogError("Minion was loaded as 'PickedUp' which should not be possible!");
                 break;
             case 4:
+                //remove from player and update to normal state
+                Revive();
+                TransformBackToMonster();
                 UpdateReturning();
                 break;
             case 2:
+                //remove from player and update to normal state
+                Revive();
+                TransformBackToMonster();
                 UpdateIdle();
                 break;
             case 6:
@@ -453,13 +479,11 @@ public class MinionScript : MonoBehaviour, IChangable, ISerializable
 
                 Destroy(spawnPointGO);
 
-                GetComponent<SpriteRenderer>().sprite = objSpr;
+                GetComponent<SpriteRenderer>().enabled = false;
                 GetComponent<Animator>().enabled = false;
 
                 trigger.enabled = false;
                 bodyColl.enabled = false;
-
-                StartCoroutine(FadeSprite());
                 break;
         }
     }
