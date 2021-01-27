@@ -15,7 +15,7 @@ public class DisableVisualNovel : MonoBehaviour
     private void Awake()
     {
         UIManager.Instance.StopVNWithoutBlackscreen();
-        PlayerScript.Instance.visualNovelMode = true;
+        PlayerScript.Instance.animationIsPlaying = true;
 
         //Change current VideoPlayer in GameManager
         GameManager.Instance.currentVideoPlayer = videoPlayerPanel.GetComponentInChildren<VideoPlayer>();
@@ -30,7 +30,6 @@ public class DisableVisualNovel : MonoBehaviour
 
     void StartVisualNovel()
     {       
-        PlayerScript.Instance.visualNovelMode = true;
         nextDialog.SetActive(true);
 
         videoPlayerPanel.SetActive(false);
@@ -45,6 +44,7 @@ public class DisableVisualNovel : MonoBehaviour
         yield return new WaitForSeconds(videoClipLength);
 
         PlayerScript.Instance.visualNovelMode = true;
+        PlayerScript.Instance.animationIsPlaying = false;
 
         nextDialog.SetActive(true);
 

@@ -268,6 +268,7 @@ public class PlayerScript : MonoBehaviour, ISerializable
 
     public bool visualNovelMode = false;
     public bool tutorialMode = false;
+    public bool animationIsPlaying = false;
 
     public MinionScript pickedUpObj = null;
 
@@ -356,7 +357,7 @@ public class PlayerScript : MonoBehaviour, ISerializable
 
     void Update()
     {
-        if (!visualNovelMode && !tutorialMode && !dead)
+        if (!visualNovelMode && !tutorialMode && !dead && !animationIsPlaying)
             SetMovementVector();
         else
         {
@@ -379,7 +380,7 @@ public class PlayerScript : MonoBehaviour, ISerializable
         #region clear state
         if (clearSightAvailable)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !visualNovelMode && !tutorialMode && !dead)
+            if (Input.GetKeyDown(KeyCode.Space) && !visualNovelMode && !tutorialMode && !dead && !animationIsPlaying)
             {    
                 UpdateClearState();
 
@@ -407,10 +408,10 @@ public class PlayerScript : MonoBehaviour, ISerializable
         //footsteps
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) //moving
         {
-            if (!visualNovelMode && !paralyzed && !dead && !tutorialMode)
+            if (!visualNovelMode && !paralyzed && !dead && !tutorialMode && !animationIsPlaying)
                 AudioManager.Instance.PlayWalking();
         }
-        if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) || visualNovelMode || paralyzed || dead || tutorialMode) //stop
+        if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) || visualNovelMode || paralyzed || dead || tutorialMode || animationIsPlaying) //stop
         {
             AudioManager.Instance.StopWalking();
         }
