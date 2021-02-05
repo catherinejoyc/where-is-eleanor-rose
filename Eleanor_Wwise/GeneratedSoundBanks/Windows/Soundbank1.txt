@@ -45,35 +45,35 @@ Trigger	ID	Name			Wwise Object Path	Notes
 	180550934	ClearSight_Trigger			\Default Work Unit\ClearSight_Trigger	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	469120	Depression2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Depression2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEP_Track\DepressionTrack\Depression2		21609736
-	87014401	Minion_Footstep1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep1		54744
-	87344905	CSGlitch	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\CSGlitch_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFx\CSGlitch		672064
-	116336248	Activate_ClearSight	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Activate_ClearSight_CB.wav - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFx\Activate_ClearSight		6912064
-	165111488	Player_Footstep2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep2		53652
-	226239861	Depression1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Depression1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEP_Track\DepressionTrack\Depression1		21609736
-	261231690	Daisy	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Daisy_CB - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\Daisy		288064
-	381342520	Anger1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Anger1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger1		21504064
-	435285159	BT_Intro_VN	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\BT_Intro_VN_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Start\BT_Intro_VN\BT_Intro_VN		3072064
-	464775969	Minion_Footstep3	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep3		46544
-	484033658	Bargaining2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Bargaining2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining2		21504064
-	520341410	TextSound	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Blip_Select65_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\VisualNovel\TextSound		10208
-	598318545	Bargaining1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Bargaining1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining1		21504064
-	603897039	ambiece_loop_mixdown	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\ambiece_loop_mixdown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\ambiece_loop_mixdown		105840064
-	621303002	Nazar	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Nazar_CB - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\Nazar		288064
-	629507224	Player_Footstep1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep1		49404
-	633598745	Player_Footstep4	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep4		58912
-	649052607	Denial1	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Denial1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial1		21504064
-	652670768	Minion_Footstep2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep2		54744
-	664538815	Denial3	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Denial3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial3		21504064
-	759192375	BT_Loop_VN	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\BT_Loop_VN_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Start\BT_Loop_VN\BT_Loop_VN		18432064
-	822361107	CSTrack2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\CSTrack2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\CS_Stinger\CSTrack2\CSTrack2		21450564
-	829840242	Anger2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Anger2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger2		21504064
-	834973408	BaseTrack_v2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\BaseTrack_v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_v2\BaseTrack_v2\BaseTrack_v2		21504064
-	856036755	BT_Glitch	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\BT_Glitch_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Glitch\BT_Glitch\BT_Glitch		180288
-	924641352	Minion_Footstep4	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep4		55200
-	962261739	Player_Footstep5	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep5		56520
-	987598985	Bargaining3	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Bargaining3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining3		21504064
-	1002317342	Denial2	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Denial2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial2		21504064
-	1014153918	Anger3	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Anger3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger3		21504064
-	1065013515	Player_Footstep3	D:\5AHMNG\Eleanor_Repository\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep3		58436
+	469120	Depression2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Depression2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEP_Track\DepressionTrack\Depression2		21609736
+	87014401	Minion_Footstep1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep1		54744
+	87344905	CSGlitch	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\CSGlitch_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFx\CSGlitch		672064
+	116336248	Activate_ClearSight	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Activate_ClearSight_CB.wav - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFx\Activate_ClearSight		6912064
+	165111488	Player_Footstep2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep2		53652
+	226239861	Depression1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Depression1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEP_Track\DepressionTrack\Depression1		21609736
+	261231690	Daisy	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Daisy_CB - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\Daisy		288064
+	381342520	Anger1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Anger1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger1		21504064
+	435285159	BT_Intro_VN	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\BT_Intro_VN_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Start\BT_Intro_VN\BT_Intro_VN		3072064
+	464775969	Minion_Footstep3	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep3		46544
+	484033658	Bargaining2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Bargaining2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining2		21504064
+	520341410	TextSound	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Blip_Select65_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\VisualNovel\TextSound		10208
+	598318545	Bargaining1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Bargaining1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining1		21504064
+	603897039	ambiece_loop_mixdown	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\ambiece_loop_mixdown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmo\ambiece_loop_mixdown		105840064
+	621303002	Nazar	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Nazar_CB - TrackTest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\Nazar		288064
+	629507224	Player_Footstep1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep1		49404
+	633598745	Player_Footstep4	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep4		58912
+	649052607	Denial1	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Denial1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial1		21504064
+	652670768	Minion_Footstep2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep2		54744
+	664538815	Denial3	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Denial3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial3		21504064
+	759192375	BT_Loop_VN	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\BT_Loop_VN_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Start\BT_Loop_VN\BT_Loop_VN		18432064
+	822361107	CSTrack2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\CSTrack2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\CS_Stinger\CSTrack2\CSTrack2		21450564
+	829840242	Anger2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Anger2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger2		21504064
+	834973408	BaseTrack_v2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\BaseTrack_v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_v2\BaseTrack_v2\BaseTrack_v2		21504064
+	856036755	BT_Glitch	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\BT_Glitch_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BT_Glitch\BT_Glitch\BT_Glitch		180288
+	924641352	Minion_Footstep4	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Minion_Footsteps\Minion_Footstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Minion_Footsteps\Minion_Footstep4		55200
+	962261739	Player_Footstep5	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep5		56520
+	987598985	Bargaining3	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Bargaining3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\BAR_Track\BargainingTrack\Bargaining3		21504064
+	1002317342	Denial2	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Denial2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DEN_Track\DenialTrack\Denial2		21504064
+	1014153918	Anger3	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Anger3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\ANG_Track\AngerTrack\Anger3		21504064
+	1065013515	Player_Footstep3	D:\Projekte\where-is-eleanor-rose\Eleanor_Wwise\.cache\Windows\SFX\Player_Footsteps\Player_Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Player_Footsteps\Player_Footstep3		58436
 
