@@ -4387,6 +4387,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32900000, guid: 778878f3e7b393a4e806017959a26919,
         type: 3}
+    - target: {fileID: 1901120340, guid: c385c9215e6262844a248241b1d0e077, type: 3}
+      propertyPath: dialog.Array.data[8]
+      value: Uh- thanks. But you promised me to tell me where Eleanor is, remember?
+        :Georgia Daisy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c385c9215e6262844a248241b1d0e077, type: 3}
 --- !u!4 &538573647 stripped
@@ -61508,6 +61513,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Denial1_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: nextDialog
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: lockedArea
+      value: 
+      objectReference: {fileID: 1958800626}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: lastPartOfTheDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 627038268}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: isLevel1Path
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
+      propertyPath: otherPath
+      value: 
+      objectReference: {fileID: 1655389510}
     - target: {fileID: 576633943191164856, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -61563,40 +61592,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 576633943191164857, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
-        type: 3}
-      propertyPath: lockedArea
-      value: 
-      objectReference: {fileID: 1958800626}
-    - target: {fileID: 576633943191164857, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
-        type: 3}
-      propertyPath: parentObject
-      value: 
-      objectReference: {fileID: 627038268}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: nextDialog
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: lockedArea
-      value: 
-      objectReference: {fileID: 1958800626}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: lastPartOfTheDialog
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: parentObject
-      value: 
-      objectReference: {fileID: 627038268}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: isLevel1Path
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902216837, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
-      propertyPath: otherPath
-      value: 
-      objectReference: {fileID: 1655389510}
     - target: {fileID: 1329704784, guid: 6720c6df4fdc04d43b27bfe136ed0f67, type: 3}
       propertyPath: nextDialog
       value: 
@@ -61621,6 +61616,16 @@ PrefabInstance:
       propertyPath: otherPath
       value: 
       objectReference: {fileID: 10203376}
+    - target: {fileID: 576633943191164857, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
+        type: 3}
+      propertyPath: lockedArea
+      value: 
+      objectReference: {fileID: 1958800626}
+    - target: {fileID: 576633943191164857, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
+        type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 627038268}
     - target: {fileID: 576633943191164863, guid: 6720c6df4fdc04d43b27bfe136ed0f67,
         type: 3}
       propertyPath: m_Enabled
@@ -62703,15 +62708,6 @@ PrefabInstance:
       propertyPath: otherPath
       value: 
       objectReference: {fileID: 1805370007}
-    - target: {fileID: 2091387989, guid: 26489d9678db31449b7b5c46c42f43ce, type: 3}
-      propertyPath: nextDialog
-      value: 
-      objectReference: {fileID: 1543760787}
-    - target: {fileID: 9157687981996080345, guid: 26489d9678db31449b7b5c46c42f43ce,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 257743420, guid: 26489d9678db31449b7b5c46c42f43ce, type: 3}
       propertyPath: lastPartOfTheDialog
       value: 1
@@ -62728,6 +62724,15 @@ PrefabInstance:
       propertyPath: otherPath
       value: 
       objectReference: {fileID: 1675528248}
+    - target: {fileID: 2091387989, guid: 26489d9678db31449b7b5c46c42f43ce, type: 3}
+      propertyPath: nextDialog
+      value: 
+      objectReference: {fileID: 1543760787}
+    - target: {fileID: 9157687981996080345, guid: 26489d9678db31449b7b5c46c42f43ce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9157687981996080351, guid: 26489d9678db31449b7b5c46c42f43ce,
         type: 3}
       propertyPath: parentObject
