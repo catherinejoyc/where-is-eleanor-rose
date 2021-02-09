@@ -4640,6 +4640,7 @@ GameObject:
   - component: {fileID: 582207452}
   - component: {fileID: 582207451}
   - component: {fileID: 582207450}
+  - component: {fileID: 582207453}
   m_Layer: 0
   m_Name: DeactivateAudioTrigger
   m_TagString: Untagged
@@ -4660,6 +4661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioTriggers: {fileID: 1828267613}
+  _json: 
 --- !u!61 &582207451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4700,6 +4702,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582207453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582207449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3970c49bb10dad8428e3de1585caab6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uID: 15ad10a9-0b1c-44e0-99b7-c9fcd6d9f498
+  instanceID: 0
 --- !u!1 &593998141
 GameObject:
   m_ObjectHideFlags: 0
@@ -18384,7 +18400,7 @@ GameObject:
   - component: {fileID: 1250247017}
   - component: {fileID: 1250247021}
   - component: {fileID: 1250247020}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62422,6 +62438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887936245855414878, guid: 05c1bcbe38a9df64ba2d846d9e0f46cf,
+        type: 3}
+      propertyPath: data.dataString
+      value: UEsDBBQAAAgIAAAIIewAj54DZwIAAAwFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3GNmBCb61DSA/5mNJOLr4Ia401yJJHHwGS4b93JdvYpdMTYnff6r23K38SLk0DhVV6rTl7UgzI1wnxZ/JlMiQf4Uh3Sm74B/Q1b5zZyhfRUPOTWq4wHnuYUTVYzYtvcid8cYRBJ3mpdL1iO8iUsQbDJRUGMKWV9WiJoc8JOeLPzdJDTnhKFv70gadlNDnjsQBpQY9K47vb5V2ymKZpB5neJukiTWfpokO2QCcLQesGmFcx4OPlvMPFs2kolKiwq/FqCiUENx09Yk9NkJ/RxjgUhwWMU5QbOEW3UeQxFfBdZT39cYOXsjRgOz80Pd1zjc61ncl31dpZU7Nv2b1T4fxd8zgJvNqmT//kb+KQLrWqH/t748jfYSte7H/SU0GNHfk9Dt8P5ONg0oGKPd0KeKtAPqu1Vk4yTFrtPNQZSO6HvxdpWQXFfoi3VK+Crhlc78fbD9drOAf1x0zwehu8nLWBjVDB87AToHE6P5Bw2BjT0caoZ/HbwC+6G69Wl3jg2lhMdeXS09sqp30pWQXPvBpnM6Ul6HGHBiQV9vSKfez1DK9y/0c9UP+Kutu7XP84riAhPNRH0VXqVR0u0zKVOjyBqV6cFVzCYLVPPKNRmZKyXbGxpB62cbqkxQi2c5z9vVtkNovLuIjTOYspXSaLG0im0zmUlLLZFIotkLB8XKJOKl5bop09ODY5NJe4aP3HZbLWtAnrzjQ9rPlHrcxQyWWpNoUGkC9thwtx0HgJPk22YhwN2oC1XIaBk8+cCFXsgeWXRnlQujpaTfOhS04a/q6sj+QkC1+TnJzJ+Q9QSwMEFAAACAgAAAgh7JQpa1htAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tJKJiWGaYbKhmWmKYWKipZG5bqqRsbFpalpiYoqJcWpyUqpSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7ACPngNnAgAADAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7JQpa1htAAAAeAAAAAkAJAAAAAAAAAAAAAAAtAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABsAwAAAAA=
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05c1bcbe38a9df64ba2d846d9e0f46cf, type: 3}
