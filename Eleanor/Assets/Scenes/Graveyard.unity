@@ -655,6 +655,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5dea9604366f2fb48832d4a3f28787b0,
         type: 2}
+    - target: {fileID: 3782716558319826382, guid: f124dd46a25d5e149b53331a1136b721,
+        type: 3}
+      propertyPath: Stop_Music_NoFade.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5dea9604366f2fb48832d4a3f28787b0,
+        type: 2}
     - target: {fileID: 3782716558319826381, guid: f124dd46a25d5e149b53331a1136b721,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -985,6 +991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: 0
   endOnAwake: 1
+  _json: 
 --- !u!1 &2031964627
 GameObject:
   m_ObjectHideFlags: 0
