@@ -87,6 +87,14 @@ public class TutorialTrigger : MonoBehaviour, ISerializable
                             if (activateableGO != null)
                                 activateableGO.SetActive(true);
 
+                            currentlyActive = false;
+
+                            //save game
+                            SaveGameManager.Instance.SaveGame();
+
+                            // deactivate this
+                            gameObject.SetActive(false);
+
                             return;
                         }
 
@@ -113,24 +121,9 @@ public class TutorialTrigger : MonoBehaviour, ISerializable
                 {
                     PlayerScript.Instance.tutorialMode = true;
 
-                    //save game
-                    SaveGameManager.Instance.SaveGame();
-
                     Say(dialog[0]);
                 }
             }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && isFinished)
-        {
-            UIManager.Instance.StopPopUp();
-            currentlyActive = false;
-
-            // deactivate this
-            gameObject.SetActive(false);
         }
     }
 }
